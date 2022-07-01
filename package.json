@@ -1,0 +1,30 @@
+{
+  "name": "koa-bolerplate",
+  "version": "0.1.0",
+  "description": "a boilerplate for koa project",
+  "scripts": {
+    "start": "nodemon src/app.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa",
+    "typescript"
+  ],
+  "author": "ejay",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "@types/koa__router": "^8.0.11",
+    "glob": "^8.0.3",
+    "koa": "^2.13.4"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/koa": "^2.13.4",
+    "@types/node": "^18.0.0",
+    "nodemon": "^2.0.18",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
