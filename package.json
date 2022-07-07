@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nodemon src/app.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "keywords": [
     "koa",
@@ -15,14 +17,18 @@
   "license": "MIT",
   "dependencies": {
     "@koa/router": "^10.1.1",
-    "@types/koa__router": "^8.0.11",
     "glob": "^8.0.3",
-    "koa": "^2.13.4"
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",
     "@types/koa": "^2.13.4",
+    "@types/koa__router": "^8.0.11",
     "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
     "nodemon": "^2.0.18",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
